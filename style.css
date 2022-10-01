@@ -1,0 +1,28 @@
+:root {
+    --lines: 16;
+    --background-color: "red";
+
+}
+
+.canvas {
+    height: 900px;
+    width: 900px;
+    outline: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--lines), auto);
+    grid-template-rows: repeat(var(--lines), auto);
+
+}
+
+
+.selected {
+    background-color: var(--background-color);
+}
+
+.dialog {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
